@@ -1,6 +1,7 @@
 ---
 theme: default
 paginate: true
+title: Evaluating Trading Strategies - Performance Measures
 header: Evaluating Trading Strategies - Performance Measures
 style: |
   @import "custom.css";
