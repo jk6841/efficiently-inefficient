@@ -77,7 +77,7 @@ return으로 비교하는 것이 바람직한가?
 
 ---
 ### Fama-French(3)
-$$ R_t^e = \alpha + \beta^MR_t^{M, e} + \beta^{HML}R_t^{HML} + \beta^{SMB}R_t^{SMB} + \epsilon_t$$
+$$R_t^e = \alpha + \beta^MR_t^{M, e} + \beta^{HML}R_t^{HML} + \beta^{SMB}R_t^{SMB} + \epsilon_t$$
 - `HML(High Minus Low)`
   - `B/M(book-to-market ratio)` 기준 높은 주식이 낮은 주식보다 수익률이 높음
   - `PBR` 기준 낮은 주식이 높은 주식보다 수익률이 높음
@@ -96,18 +96,18 @@ $$ R_t^e = \alpha + \beta^MR_t^{M, e} + \beta^{HML}R_t^{HML} + \beta^{SMB}R_t^{S
   - 전략의 본질은 바뀌지 않음
 ---
 ### Sharpe Ratio
-$$ \text{SR} = \frac{E(R - R^f)}{\sigma(R-R^f)} $$
+$$\text{SR} = \frac{E(R - R^f)}{\sigma(R-R^f)}$$
 - risk 대비 return이 얼마인가
 ---
 ### Information Ratio
-$$ \text{IR} = \frac{\alpha}{\sigma(\epsilon)} $$
+$$\text{IR} = \frac{\alpha}{\sigma(\epsilon)}$$
 - $\alpha$, $\epsilon$를 어떻게 구하죠?
   - $R_t^e = \alpha + \beta R_t^{b, e} + \epsilon_t$ 에 대해 regression
 ---
 #### 특정 벤치마크 대비
-$$ \text{IR} = \frac{E(R-R^b)}{\sigma(R-R^b)} $$
+$$\text{IR} = \frac{E(R-R^b)}{\sigma(R-R^b)}$$
 - 대부분 hedge fund에서 benchmark가 physical cash라고 함 ($\Longrightarrow R_b = 0$)
-$$ \text{IR} = \frac{E(R)}{\sigma(R)} \ge \text{SR}$$
+$$\text{IR} = \frac{E(R)}{\sigma(R)} \ge \text{SR}$$
 ---
 ### _You can't eat risk-adjusted returns_
 - risk-free 대비 3% 수익, risk는 2% $\Longrightarrow \text{SR} = 1.5$
@@ -121,7 +121,7 @@ $$ \text{IR} = \frac{E(R)}{\sigma(R)} \ge \text{SR}$$
   - 얼마나 가능해?
 ---
 ### AM(alpha-to-margin) ratio
-$$ AM = \frac{\alpha}{\text{margin}} $$
+$$AM = \frac{\alpha}{\text{margin}}$$
 - maximum leverage
   - $\frac{1}{\text{margin}}$
   - e.g. margin requirement가 10%면 최대 10배 레버리지 가능
@@ -130,7 +130,7 @@ $$ AM = \frac{\alpha}{\text{margin}} $$
 - $\text{capital} = 100$ 
 - $\alpha = 3\%, \text{margin requirement} = 10\%$
   - $\text{investment} = 1000\$$
-  - $\text{excess return} = 30\$$ 
+  - $\text{excess return} = 30\$$
   - $\text{AM} = 30\%$
 - $\alpha = 7\%$, leverage 못 쓰는 경우
   - $\text{investment} = 100\$$
@@ -142,11 +142,11 @@ $$ AM = \frac{\alpha}{\text{margin}} $$
   - ROE: 자기자본 대비 얼마나 벌었나?
 ---
 ### AM & IR
-$$ \text{AM} = \frac{\alpha}{\text{margin}} = \text{IR} \times \frac{\sigma(\epsilon)}{\text{margin}} $$
+$$\text{AM} = \frac{\alpha}{\text{margin}} = \text{IR} \times \frac{\sigma(\epsilon)}{\text{margin}}$$
 ---
 ### RAROC(Risk-Adjusted Return On Capital)
 - crash risk를 무시할 수 없다면 volatility가 best risk measure가 아님
-$$ \text{RAROC} = \frac{E(R-R^f)}{\text{economic capital}} $$
+$$\text{RAROC} = \frac{E(R-R^f)}{\text{economic capital}}$$
 ---
 ### economic capital
 - 최악의 손실을 버티기 위한 최소 자본
@@ -155,7 +155,7 @@ $$ \text{RAROC} = \frac{E(R-R^f)}{\text{economic capital}} $$
   - stress tests
 ---
 ### Sortino ratio
-$$ S = \frac{E(R - R^f)}{\sigma(R1_{\{R < MAR\}})} $$
+$$S = \frac{E(R - R^f)}{\sigma(R1_{\{R < MAR\}})}$$
 - 분모를 downside risk(or downside deviation)라고 함
 - `MAR(minium accepted rate)`는 $R^f$ 또는 $0$
 - MAR 보다 높은 변동성은 포함하지 않는 방식
@@ -163,8 +163,8 @@ $$ S = \frac{E(R - R^f)}{\sigma(R1_{\{R < MAR\}})} $$
 ## 2.3 Estimating Performance Measures
 ---
 ### Geometric Average vs Arithmetic Average
- $$\text{arithmetic average} = \frac{\Sigma_{1 \le i \le T}R_i}{T}$$
- $$ 1 + \text{geometric average} = (\Pi_{1 \le i \le T}(1+R_i))^{1/T} $$
+$$\text{arithmetic average} = \frac{\Sigma_{1 \le i \le T}R_i}{T}$$
+$$1 + \text{geometric average} = (\Pi_{1 \le i \le T}(1+R_i))^{1/T}$$
 ---
 ### 언제 사용할까?
 - arithmetic
@@ -202,10 +202,10 @@ $$1 + \text{ER}^{\text{annual}} = (1 + \text{ER})^n$$
 - $\sigma^{\text{annual}} = \sigma \times \sqrt{n}$
 ---
 ### Sharpe Ratio
-$$ \text{SR}^{\text{annual}} = \frac{\text{ER}^{\text{annual}}}{\sigma^{\text{annual}}} = \text{SR} \times \sqrt{n} $$
+$$\text{SR}^{\text{annual}} = \frac{\text{ER}^{\text{annual}}}{\sigma^{\text{annual}}} = \text{SR} \times \sqrt{n}$$
 ---
 ### 얼마나 자주 P&L을 관측해야하는가?
-$$ P(R^e < 0) = P(E(R^e) + \sigma N < 0) = P(N < -SR), N \sim N(0, 1) $$
+$$P(R^e < 0) = P(E(R^e) + \sigma N < 0) = P(N < -SR), N \sim N(0, 1)$$
 
 Assume $R^e \sim N(\mu, \sigma^2)$, then $(R^e - \mu) / \sigma \sim N(0, 1)$
 $P(R^e < 0) = P((R^e - \mu) / \sigma < -\frac{\mu}{\sigma}) = P(N < -\text{SR})$
@@ -215,15 +215,15 @@ $P(R^e < 0) = P((R^e - \mu) / \sigma < -\frac{\mu}{\sigma}) = P(N < -\text{SR})$
 ---
 ## 2.5 High Water Mark
 ---
-$$ HWM_t = \max_{s \le t}P_s $$
+$$HWM_t = \max_{s \le t}P_s$$
 <img src="https://cdn.corporatefinanceinstitute.com/assets/high-water-mark-1024x640.png">
 
 ---
 ## 2.6 Drawdown
 ---
 ### Risk Measure
-$$ DD_t = \frac{HWM_t - P_t}{HWM_t} $$
-$$ MDD_T = \max_{t \le T}DD_t $$
+$$DD_t = \frac{HWM_t - P_t}{HWM_t}$$
+$$MDD_T = \max_{t \le T}DD_t$$
 ---
 <img src="images/mdd.png">
 
@@ -252,12 +252,12 @@ $$R_t^{LCM, e} \cong \alpha$$
 - 과거 return도 반영해야한다는 의미(lagged time periods)
 ---
 ### LCM 다시 보기
-$$ R_t^e = R_{t-1}^{M, e} = 0 + 0 \cdot R_0^{M, e} + 0 \cdot R_1^{M, e} + \cdots + 1 \cdot R_{t-1}^{M, e} + 0 \cdot R_t^{M, e}$$
+$$R_t^e = R_{t-1}^{M, e} = 0 + 0 \cdot R_0^{M, e} + 0 \cdot R_1^{M, e} + \cdots + 1 \cdot R_{t-1}^{M, e} + 0 \cdot R_t^{M, e}$$
 
-$$ \beta^{\text{all-in}} = \Sigma_{0 \le i \le L}\beta_{i} = \beta_{t-1} = 1 $$
-$$ \alpha^{\text{adjusted}} = 0 $$
+$$\beta^{\text{all-in}} = \Sigma_{0 \le i \le L}\beta_{i} = \beta_{t-1} = 1$$
+$$\alpha^{\text{adjusted}} = 0$$
 ---
-$$ \text{IR}^{\text{adjusted}} = \frac{\alpha^{\text{adjusted}}}{\sigma(\epsilon)}$$
+$$\text{IR}^{\text{adjusted}} = \frac{\alpha^{\text{adjusted}}}{\sigma(\epsilon)}$$
 ---
 ## 2.8 Performance Attribution
 ---
