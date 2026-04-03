@@ -1,6 +1,6 @@
 .idea
 .vscode
 
-*.html
 *.pptx
 *.pdf
+README.html
