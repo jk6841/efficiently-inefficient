@@ -150,6 +150,7 @@ $$AM = \frac{\alpha}{\text{margin}}$$
 ---
 ### AM & IR
 $$\text{AM} = \frac{\alpha}{\text{margin}} = \text{IR} \times \frac{\sigma(\epsilon)}{\text{margin}}$$
+- [IR의 정의](#information-ratio)
 ---
 ### RAROC(Risk-Adjusted Return On Capital)
 - crash risk를 무시할 수 없다면 volatility가 best risk measure가 아님
