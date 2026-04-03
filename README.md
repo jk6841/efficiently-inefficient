@@ -134,7 +134,7 @@ $$AM = \frac{\alpha}{\text{margin}}$$
   - e.g. margin requirement가 10%면 최대 10배 레버리지 가능
 ---
 ### AM ratio - examples
-- $\text{capital} = 100$ 
+- $\text{capital} = 100\$$ 
 - $\alpha = 3\%, \text{margin requirement} = 10\%$
   - $\text{investment} = 1000\$$
   - $\text{excess return} = 30\$$
