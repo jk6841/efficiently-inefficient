@@ -163,9 +163,12 @@ $$S = \frac{E(R - R^f)}{\sigma(R1_{\{R < MAR\}})}$$
 ## 2.3 Estimating Performance Measures
 ---
 ### Geometric Average vs Arithmetic Average
+$$1 + \text{geometric average} = (\Pi_{1 \le i \le T}(1+R_i))^{1/T}$$
 $$\text{arithmetic average} = \frac{\Sigma_{1 \le i \le T}R_i}{T}$$
 $$1 + \text{arithmetic average} = \frac{\Sigma_{1 \le i \le T}(1+R_i)}{T}$$
-$$1 + \text{geometric average} = (\Pi_{1 \le i \le T}(1+R_i))^{1/T}$$
+<br/>
+
+$$\text{arithmetic average} \ge \text{geometric average}$$
 ---
 ### 언제 사용할까?
 - arithmetic
