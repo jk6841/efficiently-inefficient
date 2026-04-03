@@ -11,6 +11,11 @@ style: |
 <center>윤준기</center>
 
 ---
+## Intro.
+- 트레이딩을 잘하고 있음을 어떻게 측정할 수 있을까?
+- hedge fund 전략의 `순수 실력` 판별하기
+
+---
 ## Table of Contents
 - [2.1 Alpha and Beta](#21-alpha-and-beta)
 - [2.2 Risk-Reward Ratios](#22-risk-reward-ratios)
