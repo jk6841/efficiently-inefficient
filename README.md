@@ -214,7 +214,9 @@ $$1 + \text{ER}^{\text{annual}} = (1 + \text{ER})^n$$
 - $\sigma^{\text{annual}} = \sigma \times \sqrt{n}$
 ---
 ### Sharpe Ratio
-$$\text{SR}^{\text{annual}} = \frac{\text{ER}^{\text{annual}}}{\sigma^{\text{annual}}} = \text{SR} \times \sqrt{n}$$
+$$\text{SR}^{\text{annual}} = \frac{\text{ER}^{\text{annual}}}{\sigma^{\text{annual}}} = 
+\frac{\text{ER} \times n}{\sigma \times \sqrt{n}} =
+\text{SR} \times \sqrt{n}$$
 ---
 ### 얼마나 자주 P&L을 관측해야하는가?
 $$P(R^e < 0) = P(E(R^e) + \sigma N < 0) = P(N < -SR), N \sim N(0, 1)$$
