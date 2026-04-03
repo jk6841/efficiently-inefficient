@@ -28,6 +28,8 @@ style: |
 return으로 비교하는 것이 바람직한가?
 <img src="images/hull3.24.png">
 
+- portfolio manager: "나는 10% 잃었지만 주식 시장은 30% 하락했으니 잘한거야!"
+
 ---
 ### $R_t^e = \alpha + \beta R_t^{M,e} + \epsilon_t$
 - $R_t^e(=R_t-R^f)$: risk-free rate 대비 나의 수익률
