@@ -112,7 +112,7 @@ $$\text{IR} = \frac{\alpha}{\sigma(\epsilon)}$$
   - $R_t^e = \alpha + \beta R_t^{b, e} + \epsilon_t$ 에 대해 regression
 ---
 #### 특정 벤치마크 대비
-$$\text{IR} = \frac{E(R-R^b)}{\sigma(R-R^b)}$$
+$$\text{IR} = \frac{E(R-R_b)}{\sigma(R-R_b)}$$
 - 대부분 hedge fund에서 benchmark가 physical cash라고 함 ($\Longrightarrow R_b = 0$)
 $$\text{IR} = \frac{E(R)}{\sigma(R)} \ge \text{SR}$$
 ---
