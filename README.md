@@ -32,8 +32,8 @@ return으로 비교하는 것이 바람직한가?
 
 ---
 ### $R_t^e = \alpha + \beta R_t^{M,e} + \epsilon_t$
-- $R_t^e(=R_t-R^f)$: risk-free rate 대비 나의 수익률
-- $R_t^{M,e}(=R_t^M-R^f)$: risk-free rate 대비 마켓 수익률
+- $R_t^e(=R_t-R^f)$: risk-free rate 대비 나의 `초과` 수익률
+- $R_t^{M,e}(=R_t^M-R^f)$: risk-free rate 대비 마켓 `초과` 수익률
 - $\alpha$, $\beta$는 regression으로 얻는다.
 - $\epsilon_t$: idiosyncratic risk
   - diversifiable risk
