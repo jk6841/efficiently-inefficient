@@ -303,3 +303,5 @@ $$\text{IR}^{\text{adjusted}} = \frac{\alpha^{\text{adjusted}}}{\sigma(\epsilon)
 - step1) backtest로 gross return 확인
 - step2) tx costs가 포함되어도 괜찮을까?
 - step3) investor에게 이득이 되는가?
+---
+# end
